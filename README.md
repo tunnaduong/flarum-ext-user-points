@@ -19,7 +19,7 @@ View the rankings at `/ranking`.
 Run this in your Flarum root directory:
 
 ```bash
-composer require tunnaduong/flarum-ext-user-ranking:*
+composer require tunnaduong/flarum-ext-user-points:*
 php flarum migrate
 php flarum cache:clear
 ```
