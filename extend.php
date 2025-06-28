@@ -17,7 +17,4 @@ return [
         ->listen(\Flarum\Post\Event\Posted::class, AddPointsOnComment::class)
         ->listen(\Flarum\Discussion\Event\Started::class, AddPointsOnDiscussion::class)
         ->listen(\FoF\Vote\Event\PostWasVoted::class, AddPointsOnVote::class),
-
-    (new Extend\Migration())
-        ->migrations(__DIR__ . '/migrations'),
 ];
