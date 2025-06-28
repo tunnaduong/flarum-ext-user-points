@@ -1,6 +1,7 @@
 {
   "name": "tunnaduong/flarum-ext-user-points",
   "type": "flarum-extension",
+  "license": "MIT",
   "description": "Adds a user point and ranking system. Used by CBH Youth Online forum.",
   "require": {
     "flarum/core": "^1.0",
