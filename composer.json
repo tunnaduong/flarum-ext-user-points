@@ -1,0 +1,24 @@
+{
+  "name": "tunnaduong/flarum-ext-user-points",
+  "type": "flarum-extension",
+  "description": "Adds a user point and ranking system. Used by CBH Youth Online forum.",
+  "require": {
+    "flarum/core": "^1.0",
+    "fof/vote": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tunna\\UserPoints\\": "src/"
+    }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "User Points",
+      "icon": {
+        "name": "fas fa-star",
+        "backgroundColor": "#319527",
+        "color": "#ffffff"
+      }
+    }
+  }
+}
