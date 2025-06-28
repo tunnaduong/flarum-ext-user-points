@@ -8,7 +8,7 @@ use Tunna\UserPoints\PointsController;
 
 return [
     (new Extend\Frontend('forum'))
-        ->js(__DIR__.'/js/dist/forum.js'),
+        ->js(__DIR__ . '/js/dist/forum.js'),
 
     (new Extend\Routes('forum'))
         ->get('/ranking', 'user.points.ranking', PointsController::class),
@@ -18,6 +18,6 @@ return [
         ->listen(\Flarum\Discussion\Event\Started::class, AddPointsOnDiscussion::class)
         ->listen(\FoF\Vote\Event\PostWasVoted::class, AddPointsOnVote::class),
 
-    (new Extend\Database())
-        ->migrationsDir(__DIR__.'/migrations'),
+    (new Extend\Migration())
+        ->migrations(__DIR__ . '/migrations'),
 ];
