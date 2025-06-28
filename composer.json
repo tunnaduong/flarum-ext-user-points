@@ -1,25 +1,42 @@
 {
   "name": "tunnaduong/flarum-ext-user-points",
   "type": "flarum-extension",
+  "keywords": [
+    "flarum",
+    "points",
+    "ranking",
+    "user",
+    "gamification"
+  ],
   "license": "MIT",
-  "description": "Adds a user point and ranking system. Used by CBH Youth Online forum.",
-  "require": {
-    "flarum/core": "^1.0",
-    "fof/gamification": "^1.6"
-  },
-  "autoload": {
-    "psr-4": {
-      "Tunna\\UserPoints\\": "src/"
+  "authors": [
+    {
+      "name": "Tunna Duong",
+      "email": "tunnaduong@gmail.com",
+      "homepage": "https://github.com/tunnaduong"
     }
+  ],
+  "require": {
+    "flarum/core": "^1.8",
+    "flarum/likes": "*",
+    "fof/reactions": "*"
   },
   "extra": {
     "flarum-extension": {
       "title": "User Points",
       "icon": {
         "name": "fas fa-star",
-        "backgroundColor": "#319527",
-        "color": "#ffffff"
-      }
+        "backgroundColor": "#ffc107",
+        "color": "#fff"
+      },
+      "id": "tunnaduong-user-points"
     }
-  }
+  },
+  "autoload": {
+    "psr-4": {
+      "Tunna\\UserPoints\\": "src/"
+    }
+  },
+  "minimum-stability": "beta",
+  "prefer-stable": true
 }

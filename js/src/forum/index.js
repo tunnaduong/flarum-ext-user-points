@@ -4,7 +4,7 @@ import Page from "flarum/common/components/Page";
 import Link from "flarum/common/components/Link";
 import UserCard from "flarum/forum/components/UserCard";
 
-app.initializers.add("cyo-user-ranking", () => {
+app.initializers.add("tunna-user-points", () => {
   app.routes.ranking = {
     path: "/ranking",
     component: {

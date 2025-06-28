@@ -16,5 +16,10 @@ return [
     (new Extend\Event())
         ->listen(\Flarum\Post\Event\Posted::class, AddPointsOnComment::class)
         ->listen(\Flarum\Discussion\Event\Started::class, AddPointsOnDiscussion::class)
-        ->listen(\FoF\Vote\Event\PostWasVoted::class, AddPointsOnVote::class),
+        ->listen(\Flarum\Post\Event\Posted::class, AddPointsOnComment::class)
+        ->listen(\Flarum\Discussion\Event\Started::class, AddPointsOnDiscussion::class)
+        ->listen(\Flarum\Likes\Event\PostWasLiked::class, AddPointsOnVote::class)
+        ->listen(\Flarum\Likes\Event\PostWasUnliked::class, AddPointsOnVote::class)
+        ->listen(\FoF\Reactions\Event\PostReacted::class, AddPointsOnVote::class)
+        ->listen(\FoF\Reactions\Event\PostUnreacted::class, AddPointsOnVote::class),
 ];
