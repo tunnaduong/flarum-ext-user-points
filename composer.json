@@ -5,7 +5,7 @@
   "description": "Adds a user point and ranking system. Used by CBH Youth Online forum.",
   "require": {
     "flarum/core": "^1.0",
-    "fof/vote": "*"
+    "fof/gamification": "^1.6"
   },
   "autoload": {
     "psr-4": {
